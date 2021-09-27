@@ -18,6 +18,7 @@
           pkgs.llvmPackages.libclang
           pkgs.cmake
           pkgs.ninja
+          pkgs.lldb
         ];
         CPATH = pkgs.lib.makeSearchPathOutput "dev" "include" buildInputs;
         shellHook = ''
